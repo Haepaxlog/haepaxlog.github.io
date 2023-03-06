@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     width: auto;
@@ -6,18 +10,33 @@ body {
     overflow-y: scroll;
 }
 
+@font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdHeFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans); */
 .container {
-    width: 100%
+    width: 100%;
+    font-family: 'IBM Plex Sans';
+}
+
+a {
+    text-decoration: none;
+    color: unset;
 }
 
 #bar {
     height: 3rem;
     width: 100vw;
-    background-color: aquamarine;
+    background-color: #1F7A8C;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px 1px #BFDBF7;
 }
 
 #bar span {
@@ -29,6 +48,8 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    font-size: 1.5rem;
+    color: #E1E5F2;
 }
 
 #bar div {
@@ -39,7 +60,9 @@ body {
 }
 
 #bar div:hover span{
-    text-shadow: 0.5px 0.5px grey;
+    /* text-shadow: 0.5px 0.5px  #BFDBF7; */
+    color: #BFDBF7;
+    transform: scale(1.10);
     transition: 0.3s;
 }
 
@@ -47,6 +70,7 @@ body {
 #title {
     display: flex;
     justify-content: center;
+    font-size: 4.5vw;
 }
 
 #pp {
@@ -55,9 +79,19 @@ body {
     display: block;
     margin: 0 auto;
     border-radius: 30rem;
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px 1px #BFDBF7;
     background-image: url("../res/pp.jpg");
     background-size: cover;
+}
+
+.heading {
+    display: flex;
+    justify-content: left;
+    margin-left: 6vw;
+}
+
+.heading p {
+    font-size: 3rem;
 }
 
 #projects {
@@ -69,19 +103,18 @@ body {
     overflow-x: scroll;
 }
 
-
 #projects div {
     display: grid;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid #022B3A;
     margin: 1rem;
     padding: 1rem 1rem 1rem 1rem;
     overflow: hidden;
 }
 
 #projects div:hover {
-    background-color: grey;
-    box-shadow: 0 0 2px 1px grey;
+    background-color: #E1E5F2;
+    box-shadow: 0 0 2px 1px #E1E5F2;
     transform: scale(1.05);
     transition: 0.3s;
 }
@@ -92,14 +125,38 @@ body {
 }
 
 #projects .projtitle {
-    margin: 1rem 1rem;
-    overflow: clip;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-
 
 #projects .projtext {
     margin-top: 1rem;
-    inline-size: 20rem;
+    margin-left: 1rem;
+    inline-size: 20vw;
     overflow-wrap: break-word;
-    overflow-x: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    #projects {
+        display: unset;
+        margin: 1rem 1rem 1rem 1rem;
+        grid-template-columns: auto auto;
+        padding: 2rem;
+    }
+
+    #projects .projtext {
+        inline-size: unset;
+    }
+}
+
+#monde .emacsp {
+    background-image: url("../res/Emacs-icon.webp");
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30rem;
+    box-shadow: 0 0 2px 1px #BFDBF7;
+    background-size: cover;
+    pointer-events: none;
 }
