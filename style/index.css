@@ -149,14 +149,81 @@ a {
     }
 }
 
-#monde .emacsp {
-    background-image: url("../res/Emacs-icon.webp");
+.preview {
     width: 20rem;
     height: 20rem;
-    display: block;
-    margin: 0 auto;
     border-radius: 30rem;
     box-shadow: 0 0 2px 1px #BFDBF7;
     background-size: cover;
     pointer-events: none;
 }
+
+
+div #emacs.preview {
+    background-image: url("../res/Emacs-icon.webp");
+    display: block;
+    margin: 0 auto;
+}
+
+div #hava.preview {
+    background-image: url("../res/hava-logo.png");
+    display: block;
+    margin: 0 auto;
+}
+
+div #hatty.preview {
+    background-image: url("../res/hatty-icon-upscale.png");
+    display: block;
+    margin: 0 auto;
+}
+
+.showcase {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: 1px solid #022B3A;
+    padding: 16px;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: auto 60%;
+    background: #E1E5F2;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+div #travelping .desc {
+    font-weight: bold;
+}
+
+.duration {
+   background:  #BFDBF7;
+   padding-left: 1vw;
+   padding-right: 1vw;
+   border: 1px solid black;
+}
+
+.presentation {
+    background: #E1E5F2;
+    border: 1px solid black;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-bottom: 2vh;
+}
+
+.presentation a {
+    color:  #1F7A8C;
+}
+
+.presentation a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.presentation .head {
+    font-size: 1.25rem;
+}
+
+.presentation .content {}

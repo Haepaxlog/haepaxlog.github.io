@@ -12,11 +12,9 @@
             <div id="projectslink">
               <span>Projects</span>
            </div>
-            <a href="./static/aboutme.html">
-              <div>
+              <div id="aboutlink">
                 <span>About</span>
               </div>
-            </a>
           </div>
           <div id="title">
             <p>Welcome to my Webpage</p>
@@ -33,7 +31,7 @@
           <a href="https://github.com/Haepaxlog/monde">
           <div id="monde">
             <span class="projtitle">Monde</span>
-            <div class="emacsp">
+            <div class="preview" id="emacs">
             </div>
             <p class="projtext">
               Monde is a package I wrote for emacs. It allows you to interact more easily with your kill-buffer, which is a great addition to my workflow.
@@ -43,14 +41,44 @@
           <a href="https://github.com/Haepaxlog/hava"/>
           <div id="hava">
             <span class="projtitle">Hava</span>
+            <div class="preview" id="hava">
+            </div>
+            <p class="projtext">
+              Hava is a cli application, that throws words in a foreign language at you, where you have to make a translated sentence out of those words. It then takes that information to export anki cards. It is still unfinished and I hope to continue working on it someday.
+            </p>
           </div>
           </a>
-          <div id="playngo">
-            <span class="projtitle">Playngo</span>
+          <a href="https://github.com/Haepaxlog/HattyGame">
+          <div id="hatty">
+            <span class="projtitle">HattyGame</span>
+            <div class="preview" id="hatty">
+            </div>
+            <p class="projtext">
+              HattyGame was a game I initially wrote when I learned programming and the C language. Although it is quite basic and not really that profound, I still think it can be fun if you get it running.
+            </p>
           </div>
+          </a>
         </div>
         <div class="heading">
           <p>All Things Computer</p>
+        </div>
+        <div class="showcase" id="computers">
+          <p>Here are some things I think are interesting</p>
+          <div class="presentation">
+            <p class="head">FPGAs</p>
+            <p class="content">FPGAs are a really fascinating topic. As is designing your own Computer Architecture. I recently bought a <a href="https://digilent.com/shop/basys-3-artix-7-fpga-trainer-board-recommended-for-introductory-users/">Xilinx based FPGA development board</a> relatively cheaply from Digilent (would recommend). As for what may spark interest in Computer Architecture, I recommend <a href="https://store.steampowered.com/app/1444480/Turing_Complete/">Turing Complete</a>, which is a simplified "educationish" game to teach you the basics of Computer Architecture.
+            </p>
+          </div>
+          <div class="presentation">
+            <p class="head">Container Runtimes</p>
+            <p class="content">If you have ever interacted with docker, you have probably inadvertently touched some Container Runtime. A Container Runtime is technically everything that isolates some process (unshare) and allocates it resources of the host machine (cgroups). With the excessent use of kubernetes most runtimes need also be OCI complient. This just means it needs to bundle images in a certain way and other not so interesting stuf...
+But this is conceptually not that difficult and you can kind of see how containerisation solutions became as popular as they did. If I got your attention, maybe check out <a href="https://github.com/opencontainers/runc">runc</a> or <a href="https://www.ianlewis.org/en/container-runtimes-part-2-anatomy-low-level-contai">this wonderful explanation</a> of Container Runtime details.
+            </p>
+          </div>
+        <div class="presentation">
+          <p class="head">Design</p>
+          <p class="content">What does it mean to you? I don't really like that question, but in this case it is intruiging to think about. What does it really mean? Design "designates", quite literally, what sign an object should be conceived with. In case of a tree, meaning the word tree, (<a href="https://en.wikipedia.org/wiki/Signified_and_signifier">yes, I am refering to de Sassure</a>) I associate it with an abstract version of a tree, maybe a childhood version of the first tree I saw or I liked best, not any tree particular and certainly not yours. Design therefore can't dictate conception, as I can't command you how to sit on your chair. But the designers of the chair had in mind, that a human intelligence would succomb to the idea to sit on it. This, I think, precisely captures the essence of design. But back to Computers. Designing systems or user interfaces accelerates the problem of what design means, because I need to designate a usecase for some "object", which doesn't exist despite the human mind but only within it. Therefore, I need to consider how I can guide you to use the object the intended way by appealing to other abstract concepts. You could say that's how programming languages, api naming convention, function names and guis are supposed to work. We should therefore maybe not talk about design rules or best practices, but maybe keep in mind what we are actually trying to do, guide humans.</p>
+        </div>
         </div>
         <div id="interests">
         </div>
@@ -58,6 +86,15 @@
           <p>Stuff I did for others</p>
         </div>
         <div id="employment">
+          <div class="showcase">
+            <div class="work" id="travelping">
+              <p class="title">Travelping</p>
+              <p class="desc">Werkstudent Cloud Infrastructure      Engineering</p>
+              <div class="duration">
+                <p>2022-now</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="heading">
           <p>Beyond Computers</p>
