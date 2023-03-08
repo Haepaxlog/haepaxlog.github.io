@@ -178,8 +178,8 @@ div #hatty.preview {
 }
 
 .showcase {
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
     border: 1px solid #022B3A;
@@ -192,6 +192,11 @@ div #hatty.preview {
     background: #E1E5F2;
     padding: 1rem;
     margin: 1rem;
+    border: 1px solid #022B3A;
+}
+
+.overhead {
+    font-size: 1.25rem;
 }
 
 div #travelping .desc {
@@ -202,12 +207,12 @@ div #travelping .desc {
    background:  #BFDBF7;
    padding-left: 1vw;
    padding-right: 1vw;
-   border: 1px solid black;
+   border: 1px solid #022B3A;
 }
 
 .presentation {
     background: #E1E5F2;
-    border: 1px solid black;
+    border: 1px solid #022B3A;
     padding-left: 1vw;
     padding-right: 1vw;
     margin-bottom: 2vh;
